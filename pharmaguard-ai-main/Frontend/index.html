@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PharmaGuard</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<div class="background"></div>
+
+<header class="top-header">
+  <div class="logo-section">
+    <div class="logo">🛡️</div>
+    <h1>PharmaGuard</h1>
+  </div>
+
+  <div class="login-btn">
+    <button onclick="openLogin()">Login</button>
+  </div>
+</header>
+
+<section class="hero">
+  <p>
+    Welcome back, <span>Guest</span>. Upload genetic data to assess
+    personalized pharmacogenomic drug risk.
+  </p>
+</section>
+
+<main class="cards single">
+
+  <div class="card primary" onclick="goToGenomics()">
+    <div class="icon">🧬</div>
+    <h2>Genomic Analysis</h2>
+    <p>
+      Upload VCF files to identify pharmacogenomic variants and receive
+      CPIC-aligned dosing recommendations across 6 critical genes using
+      explainable AI.
+    </p>
+    <button class="cta">Start Analysis</button>
+  </div>
+
+</main>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Login</h2>
+    <input type="text" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button>Login</button>
+    <p class="close" onclick="closeLogin()">Close</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

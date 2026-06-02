@@ -1,0 +1,66 @@
+.sub-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.upload-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+.upload-card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background: #3fe0d0;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.result-card {
+  margin-top: 25px;
+}
+
+.loading {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.risk-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.risk-safe { background: #2ecc71; color: black; }
+.risk-adjust { background: #f1c40f; color: black; }
+.risk-toxic { background: #e74c3c; }
+.risk-ineffective { background: #c0392b; }
+.risk-unknown { background: #7f8c8d; }
+
+.explanation-card {
+  max-height: 250px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+   
