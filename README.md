@@ -212,13 +212,13 @@ A drug not in this table returns `risk_label: "Unknown"` with `confidence_score:
 
 ## AI/ML Details
 
-| Aspect             |              Detail |
-| **Model/API used** | Groq API, model `llama-3.1-8b-instant` |
-| **Library**        | `groq` Python SDK |
-| **Input**          | Gene, diplotype, phenotype, drug, risk label, severity, and detected rsIDs (all pre-computed by the rule engine) |
-| **Processing**     | A system + user prompt instructs the model to explain the result strictly from the supplied structured data, follow CPIC-aligned reasoning, avoid reinterpreting allele function or speculating, and respond in under 8 sentences across four sections (summary, biological mechanism, clinical impact, recommendation rationale) |
-| **Output**         | A plain-text clinical explanation string, returned as `llm_generated_explanation.summary` |
-| **Role in the system** | The LLM only narrates results that were already determined by the deterministic rule engine (`gene_rules.py`, `drug_rules.py`) — it does not decide the risk label, severity, or confidence score itself |
+| Aspect|Detail |
+| **Model/API used**| Groq API, model `llama-3.1-8b-instant` |
+| **Library**| `groq` Python SDK |
+| **Input**| Gene, diplotype, phenotype, drug, risk label, severity, and detected rsIDs (all pre-computed by the rule engine) |
+| **Processing**| A system + user prompt instructs the model to explain the result strictly from the supplied structured data, follow CPIC-aligned reasoning, avoid reinterpreting allele function or speculating, and respond in under 8 sentences across four sections (summary, biological mechanism, clinical impact, recommendation rationale) |
+| **Output**| A plain-text clinical explanation string, returned as `llm_generated_explanation.summary` |
+| **Role in the system**| The LLM only narrates results that were already determined by the deterministic rule engine (`gene_rules.py`, `drug_rules.py`) — it does not decide the risk label, severity, or confidence score itself |
 
 ## Future Scope
 
