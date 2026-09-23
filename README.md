@@ -220,9 +220,6 @@ A drug not in this table returns `risk_label: "Unknown"` with `confidence_score:
 | **Output**         | A plain-text clinical explanation string, returned as `llm_generated_explanation.summary` |
 | **Role in the system** | The LLM only narrates results that were already determined by the deterministic rule engine (`gene_rules.py`, `drug_rules.py`) — it does not decide the risk label, severity, or confidence score itself |
 
-## Screenshot  
-
-
 ## Future Scope
 
 (Proposed — not currently implemented)
