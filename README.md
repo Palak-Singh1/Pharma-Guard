@@ -212,7 +212,8 @@ A drug not in this table returns `risk_label: "Unknown"` with `confidence_score:
 
 ## AI/ML Details
 
-| Aspect|Detail |
+| Aspect|   Detail |
+
 | **Model/API used**| Groq API, model `llama-3.1-8b-instant`|
 
 | **Library**| `groq` Python SDK |
